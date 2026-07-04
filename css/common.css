@@ -14,6 +14,15 @@
   --grey: rgba(46, 47, 66, 0.7);
   --white: #fff;
   --dairy: #fcfcfc;
+
+  --transition-duration: 250ms;
+  --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
+  --transition:
+    color var(--transition-duration) var(--transition-timing),
+    background-color var(--transition-duration) var(--transition-timing),
+    box-shadow var(--transition-duration) var(--transition-timing),
+    fill var(--transition-duration) var(--transition-timing),
+    transform var(--transition-duration) var(--transition-timing);
 }
 
 /*#region Default styles */
@@ -46,7 +55,6 @@ h3 {
   line-height: 1.2;
   color: var(--navy-blue);
 }
-
 
 .container {
   max-width: 1158px;

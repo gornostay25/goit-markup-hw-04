@@ -17,11 +17,31 @@
   color: var(--navy-blue);
   display: block;
   padding: 24px 0;
+  position: relative;
+  transition: color var(--transition-duration) var(--transition-timing);
+}
+
+.header-nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--ocean);
+  border-radius: 2px;
+  transform: scaleX(0);
+  transition: transform var(--transition-duration) var(--transition-timing);
 }
 
 .header-nav-link:hover,
 .header-nav-link:focus {
   color: var(--ocean);
+}
+
+.header-nav-link:hover::after,
+.header-nav-link:focus::after {
+  transform: scaleX(1);
 }
 
 .header-container .logo-link {
@@ -37,6 +57,7 @@
   color: var(--slate);
   display: block;
   padding: 24px 0;
+  transition: color var(--transition-duration) var(--transition-timing);
 }
 
 .header-contacts-link:hover,
