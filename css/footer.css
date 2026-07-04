@@ -1,0 +1,14 @@
+.footer {
+  background-color: var(--navy-blue);
+  color: var(--cloud);
+  padding: 100px 0;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.footer-text {
+  max-width: 264px;
+}
