@@ -34,14 +34,17 @@
   transition: transform var(--transition-duration) var(--transition-timing);
 }
 
-.header-nav-link:hover,
-.header-nav-link:focus {
+.header-nav-link.current {
   color: var(--ocean);
 }
 
-.header-nav-link:hover::after,
-.header-nav-link:focus::after {
+.header-nav-link.current::after {
   transform: scaleX(1);
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus {
+  color: var(--ocean);
 }
 
 .header-container .logo-link {

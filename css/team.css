@@ -40,7 +40,7 @@
 .team-socials {
   display: flex;
   justify-content: center;
-  gap: 16px;
+  gap: 24px;
   padding-top: 8px;
 }
 
@@ -58,7 +58,7 @@
 
 .team-social-link:hover,
 .team-social-link:focus {
-  background-color: var(--green);
+  background-color: var(--ocean);
 }
 
 .team-social-link svg {
