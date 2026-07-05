@@ -60,7 +60,3 @@
 .team-social-link:focus {
   background-color: var(--ocean);
 }
-
-.team-social-link svg {
-  transition: fill var(--transition-duration) var(--transition-timing);
-}
